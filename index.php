@@ -19,12 +19,12 @@
 
     <link rel="stylesheet" href="css/custom.css">
 
-    <?php require 'logic.php'; ?>
+    
 
 </head>
 
 <body>
-
+    <?php require 'logic.php'; ?>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -102,7 +102,7 @@ echo $chars[$char];
             </h3>
                 <br>
                 <form method="post" action="index.php">
-                    <legend>How many words?</legend>
+                    <p>How many words?</p>
                     <input type="number" name="words" id="words" max="10" placeholder="number from 1 to 10" required>
                     <br><br>
                     <input type="checkbox" name="number" id="number" value="TRUE">
