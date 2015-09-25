@@ -49,8 +49,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project 2 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">View</a></li>
-                            <li><a href="#">Github</a></li>
+                            <li class="title">XKCD Password Generator</li>
+                            <li><a href="http://p1.wjfletcher.me">View</a></li>
+                            <li><a href="https://github.com/wjfletcher/p2">Github</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -103,13 +104,13 @@ echo $chars[$char];
                 <form method="post" action="index.php">
                     <legend>How many words?</legend>
                     <input type="number" name="words" id="words" max="10" placeholder="number from 1 to 10" required>
-                    
-                    <legend>Include number</legend>
+                    <br><br>
                     <input type="checkbox" name="number" id="number" value="TRUE">
-                    
-                    <legend>Include special character</legend>
-                    <input type="checkbox" name="spechar" id="spechar" value="TRUE">
+                    <label for="number">Include number</label>
                     <br>
+                    <input type="checkbox" name="spechar" id="spechar" value="TRUE">
+                    <label for="spechar">Include special character</label>
+                    <br><br>
                     <input type="submit" value="Get password">
                 </form>
 
