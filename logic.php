@@ -1,5 +1,5 @@
 <?php
-    print_r($_POST);
+    
     $values = Array();
 
     $wordnumber = $_POST["words"];
